@@ -1,18 +1,19 @@
 package com.company;
 
 public class BubbleSort {
-    public static void bubbleSort(int[] testarr) {
+    public static void bubbleSort(int[] testArr) {
         boolean swapped = true;
         while (swapped) {
-            for (int i = 1; i < testarr.length; i++) {
+            for (int i = 1; i < testArr.length; i++) {
                 int temp = 0;
-                if (testarr[i - 1] > testarr[i]) {
-                    temp = testarr[i - 1];
-                    testarr[i - 1] = testarr[i];
-                    testarr[i] = temp;
+                if (testArr[i - 1] > testArr[i]) {
+                    temp = testArr[i - 1];
+                    testArr[i - 1] = testArr[i];
+                    testArr[i] = temp;
                     swapped = true;
+                    System.out.println(testArr);
                 }
             }
         }
     }
-    }
+}
